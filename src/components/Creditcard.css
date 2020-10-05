@@ -1,0 +1,39 @@
+.creditcard {
+    height: 180px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 20px;
+}
+
+.creditcard>* {
+    justify-self: center;
+    align-self: center;
+}
+
+.creditcard img {
+    height: 20px;
+    grid-column: 4
+}
+
+.creditcard .dot {
+    font-size: 1.3em;
+}
+
+.creditcard .number {
+    grid-column: 4;
+}
+
+.creditcard .expire {
+    grid-column: span 2;
+}
+
+.creditcard .bank {
+    grid-column: span 2;
+}
+
+.creditcard .owner {
+    grid-row: 4;
+    grid-column: span 3;
+}
